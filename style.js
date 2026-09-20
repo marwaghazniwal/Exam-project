@@ -3,7 +3,7 @@ const form = document.querySelector("form");
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const username = document.getElementById("username").value;
+    const username = document.getElementById("user").value;
     const password = document.getElementById("password").value;
 
     if (username ==="admin" && password ==="12345678") {
@@ -11,7 +11,6 @@ form.addEventListener("submit", function(event) {
         window.location.href="home.html";
     } else {
         alert("incorrect username or password");
-        console.log("Username:", username);
-        console.log("Password:", password);
+        console.log("Login Failed!");
     }
 });

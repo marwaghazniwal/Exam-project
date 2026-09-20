@@ -7,16 +7,32 @@
     <title>Sign in to MypatientHUB!</title>
 <link rel="stylesheet" href="style.css">
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="Exam_Project/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script src="style.js"defer></script>
+<link rel="stylesheet" href="Exam_Project/home.html">
 </head>
 <body>
+     
+    <div class="social-login">
+    <button type="button" class="social-btn">
+        <i class="fa-brands fa-facebook-f"></i>
+    </button>
+
+    <button type="button" class="social-btn">
+        <i class="fa-brands fa-google"></i>
+    </button>
+    </div>
 
 
     <div class="wrapper">
         <form action="">
         <h1>Welcome to My patientHUB page!</h1>
         <div class="input-box">
+       
 
-        <input type="text" id="username" placeholder="Username" required>
+        <input type="text" id="user" placeholder="add your email" required>
         <i class="bx bx-user"></i>
         </div>
         
@@ -27,17 +43,35 @@
 
         <div class="remember-forgot">
             <label><input type="checkbox">Remember me</label>
-            <a href="#">Forgot Password</a>
+            <a href="#" target="_blank">Forgot Password</a>
         </div>
+       
         <button type="submit" class="btn">Login</button>
         <div class="legister-link">
-            <p>Don't have an account?<a href="#">Register</a></p>
+            <p>Don't have an account?<a href="#" target="_blank">Register</a></p>
             
-
+        
         </div>
     </form>
     </div>
-    <script src="style.js"></script>
+    <footer class="footer">
+<div class="footer-links">
+    <a href="https://play.google.com/"target="_blank"> Google Play Store App
+    </a>
+    <a href="https://www.apple.com/app-store" target="blank"> App Store App
+    </a>
+    <a href="#mypatienthub"> About MypatientHUB
+    </a>
+    <a href="#about-us"> About Us
+    </a>
+    <a href="#blog"> Our Blog
+    </a>
+</div>
+
+
+    </footer>
+    
+    <script src="Exam_Project/home.js"></script>
 
 </body>
 

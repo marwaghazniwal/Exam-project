@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPatientHUB — Find a Clinic</title>
+
+  
+  <link
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
+
+  <link rel="stylesheet" href="clinic.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">✚</span>
+      <div>
+        <div class="brand-name">Findhospital</div>
+        <div class="brand-subtitle">Findhospital</div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <label class="top-search">
+        <span>⌕</span>
+        <input id="globalSearch" type="search" placeholder="Type here..." />
+      </label>
+      <button class="login-btn" type="button">◉ Log in</button>
+      <button class="icon-btn" type="button" aria-label="Settings">⚙</button>
+      <button class="icon-btn" type="button" aria-label="Profile">●</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="breadcrumb">⌂ / Findhospital</div>
+        <h1>Find a Clinic</h1>
+        <p>Search clinics and schedule an appointment with doctors through Clinic</p>
+
+        <div class="hero-search">
+          <input id="clinicSearch" type="search" placeholder="Search" />
+          <input id="zipSearch" type="text" placeholder="Zip Code or Neighborhood" />
+        </div>
+
+        <div class="hero-buttons">
+          <button id="searchBtn" class="primary-btn" type="button">Search</button>
+          <button id="nearbyBtn" class="primary-btn" type="button">Nearby</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="view-switcher">
+      <button class="view-tab active" id="mapTab" type="button">⌖ <span>Map</span></button>
+      <button class="view-tab" id="listTab" type="button">▦ <span>List</span></button>
+    </section>
+
+    <section class="content-grid">
+      <aside class="filters">
+        <div class="filter-input">
+          <input id="primaryCare" type="search" placeholder="Primary Care" />
+        </div>
+        <div class="filter-input">
+          <input id="zipFilter" type="text" placeholder="Zip code or Neighborhood" />
+        </div>
+
+        <h3>Filter By</h3>
+
+        <label class="select-wrap">
+          <select id="specialty">
+            <option value="">Specialty</option>
+            <option value="Primary Care">Primary Care</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <option value="Dental">Dental</option>
+            <option value="General Medicine">General Medicine</option>
+          </select>
+        </label>
+
+        <label class="select-wrap">
+          <select id="gender">
+            <option value="">Gender</option>
+            <option value="Any">Any</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+          </select>
+        </label>
+
+        <label class="select-wrap">
+          <select id="condition">
+            <option value="">Condition</option>
+            <option value="General">General</option>
+            <option value="Children">Children</option>
+            <option value="Dental">Dental</option>
+          </select>
+        </label>
+
+        <label class="select-wrap">
+          <select id="language">
+            <option value="">Languages</option>
+            <option value="Dari">Dari</option>
+            <option value="Pashto">Pashto</option>
+            <option value="English">English</option>
+          </select>
+        </label>
+
+        <h3>Providers Who Treat</h3>
+        <label class="check-row"><input type="checkbox" checked /> <span>All Ages</span></label>
+        <label class="check-row"><input type="checkbox" /> <span>Children</span></label>
+        <label class="check-row"><input type="checkbox" /> <span>Adults</span></label>
+
+        <h3>View Only</h3>
+        <label class="check-row"><input id="onlineOnly" type="checkbox" /> <span>Online Scheduling</span></label>
+        <label class="check-row"><input id="primaryOnly" type="checkbox" /> <span>Primary Care</span></label>
+
+        <button id="clearFilters" class="clear-btn" type="button">Clear Filters</button>
+      </aside>
+
+      <section class="results-area">
+        <div id="map" class="map-panel"></div>
+        <div id="list" class="clinic-list hidden"></div>
+        <div id="emptyState" class="empty-state hidden">
+          <div class="empty-icon">⌕</div>
+          <h2>No clinics found</h2>
+          <p>Try changing the search or clearing one of the filters.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026, made with ♥ by MyPatientHUB for a better web.</div>
+    <div class="footer-links">
+      <span>MyPatientHUB</span>
+      <span>About Us</span>
+      <span>Blog</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+  <script src="clinic.js"></script>
+</body>
+</html>

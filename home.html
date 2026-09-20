@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPatientHUB Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.html">
+</head>
+<body>
+<div class="dashboard">
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">
+            <div class="logo-icon"><span>M</span></div>
+            <div class="logo-text"><strong>MyPatient</strong><br><span>HUB</span></div>
+        </div>
+        <nav class="navigation">
+            <a href="#" class="nav-item active"><i class="fa-solid fa-table-columns"></i><span>Dashboard</span></a>
+            <a href="#" class="nav-item"><i class="fa-regular fa-calendar"></i><span>Appointments</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-user-doctor"></i><span>Find Doctor</span></a>
+            <a href="clinic.html" class="nav-item"><i class="fa-solid fa-hospital"></i><span>Find Clinic</span></a>
+            <a href="#" class="nav-item"><i class="fa-regular fa-comments"></i><span>Chat</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-store"></i><span>Find Marketplace</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-capsules"></i><span>Find Pharmacy</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-people-group"></i><span>My Dependents</span></a>
+            <a href="#" class="nav-item"><i class="fa-regular fa-user"></i><span>My Account</span></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i><span>Settings</span></a>
+        </nav>
+        <div class="help-box">
+            <div class="question">?</div>
+            <div><strong>Need Help?</strong><p>Contact support</p></div>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="top-left">
+                <button class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+                <div class="breadcrumb">
+                    <div><i class="fa-solid fa-house"></i><span>/</span><span>Dashboard</span></div>
+                    <h3>Dashboard</h3>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Type here...">
+                </div>
+                <button class="top-button"><i class="fa-solid fa-circle-user"></i> Log out</button>
+                <button class="icon-button"><i class="fa-solid fa-gear"></i></button>
+                <button class="icon-button"><i class="fa-solid fa-bell"></i></button>
+            </div>
+        </header>
+
+        <section class="content">
+            <h1>Welcome To MyPatientHUB!</h1>
+
+            <div class="cards-row">
+                <div class="card">
+                    <div class="card-header"><h2>Promotion by Clinics</h2><button class="info"><i class="fa-solid fa-exclamation"></i></button></div>
+                    <div class="chart-content">
+                        <img class="chart-image" src="images/clinics.png" alt="Clinic promotion chart">
+                        <div class="statistics">
+                            <div class="stat"><div class="stat-name"><span class="brand pink">✚</span>Klinik Lee Healthcare</div><span>19%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand blue">A</span>Klinik Bandar Baru Nilai</div><span>4%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand multi">✣</span>Klinik Mediviron Giant Nilai</div><span>10%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand green">≡</span>KLINIK NILAI IMPIAN</div><span>21%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand diamond">◆</span>Klinik Mediviron</div><span>2%</span></div>
+                        </div>
+                    </div>
+                    <button class="details-btn">MORE DETAILS</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header"><h2>Promotion by Pharmacies</h2><button class="info"><i class="fa-solid fa-exclamation"></i></button></div>
+                    <div class="chart-content">
+                        <img class="chart-image" src="images/pharmacies (1).png" alt="Pharmacy promotion chart">
+                        <div class="statistics">
+                            <div class="stat"><div class="stat-name"><span class="brand pink">✚</span>ALPRO PHARMACY NILAI</div><span>15%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand blue">A</span>ALPRO PHARMACY PEKAN NILAI</div><span>12%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand multi">✣</span>OK PHARMACY</div><span>5%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand green">≡</span>PHARMART PHARMACY NILAI</div><span>9%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand diamond">◆</span>Health Lane Family Pharmacy</div><span>14%</span></div>
+                        </div>
+                    </div>
+                    <button class="details-btn">MORE DETAILS</button>
+                </div>
+            </div>
+
+            <div class="cards-row second-row">
+                <div class="card market-card">
+                    <div class="card-header"><h2>Smart Market Usage by app</h2><button class="info"><i class="fa-solid fa-exclamation"></i></button></div>
+                    <div class="market-content">
+                        <img class="chart-image" src="images/market (1).png" alt="Smart market usage chart">
+                        <div class="statistics">
+                            <div class="stat"><div class="stat-name"><span class="brand pink">✚</span>Food Panda</div><span>25%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand blue">A</span>Grab Food</div><span>3%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand multi">✣</span>Shopee</div><span>15%</span></div>
+                            <div class="stat"><div class="stat-name"><span class="brand green">≡</span>Lazada</div><span>12%</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card health-card">
+                    <div class="card-header"><h2>Health Index</h2><button class="info"><i class="fa-solid fa-exclamation"></i></button></div>
+                    <div class="health-value"><strong>70%</strong><span>+3%</span></div>
+                    <div class="line-chart">
+                        <svg viewBox="0 0 700 250" preserveAspectRatio="none">
+                            <defs><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-opacity=".25"/><stop offset="100%" stop-opacity="0"/>
+                            </linearGradient></defs>
+                            <path class="area" d="M0,210 C50,195 70,210 110,205 C150,198 170,185 210,195 C250,205 275,160 315,155 C350,150 365,185 405,175 C440,165 450,105 490,110 C530,115 535,155 570,135 C605,115 610,65 650,80 C675,90 685,110 700,90 L700,250 L0,250 Z"/>
+                            <path class="line" d="M0,210 C50,195 70,210 110,205 C150,198 170,185 210,195 C250,205 275,160 315,155 C350,150 365,185 405,175 C440,165 450,105 490,110 C530,115 535,155 570,135 C605,115 610,65 650,80 C675,90 685,110 700,90"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="home.js"></script>
+</body>
+</html>
